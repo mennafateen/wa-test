@@ -18,7 +18,7 @@ $(document).ready(function() {
       if (event.keyCode == 13) {
           console.log("Enter was pressed.");
           greetMe();
-          getWeatherWithGeoLocation();
+       //   getWeatherWithGeoLocation();
           $('#greet').addClass('animated swing');
       }
       else {
