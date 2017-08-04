@@ -1,0 +1,218 @@
+* {
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+  
+}
+
+@font-face {
+    font-family: "customfont";
+    src: url("../css/fonts/Raleway-Regular.ttf") format('truetype');
+
+}
+
+
+html {
+    display: table;
+    margin: auto;
+    text-align: center;
+    
+}
+
+
+
+body {
+    -webkit-touch-callout: none;
+    -webkit-text-size-adjust: none;
+    -webkit-user-select: none;
+
+    font-size:12px;
+    height:100%;
+    margin:auto;
+    padding:0px;
+  
+    width:100%;
+	
+    background-color:rgb(242,242,242);
+    vertical-align: middle;
+    display: table-cell;
+    font-family: 'customfont';
+}
+#login {
+    font-family: 'customfont';
+}
+#loginerror {
+    color: red;   
+}
+#signup-msg {
+    color: red;
+}
+#signup-form {
+    font-family: customfont;
+}
+#username {
+      font-family: 'customfont';
+}
+#user-name-input {
+		background-color: transparent;
+		border: none;
+		outline: none;
+        font-family: 'customfont';
+}
+
+
+#the-greeting { /*the div that contains the greeting? lol*/
+    /*background-color: rgb(168,192,216);
+    border-color: red;
+    height: 75px;
+    text-align: center;
+
+    align-items: center;
+    justify-content: center;
+
+    display:table;
+    text-align:center;
+      font-family: 'customfont';
+      display:table;*/
+}
+
+#greeting { /*the header or greeting itslef - its h2*/
+    /*vertical-align: middle;
+    display:table-cell;
+    text-align: center;*/
+    font-family: customfont;
+    color: rgb(242,171,79);
+
+}
+
+#quote { /*the quote -> this is an h3 header*/
+ 
+
+    height: 3em;
+    padding: 3em 10%;
+    background: #ED8D0F; /*bright orange*/
+    color: #5B5B5B; /*midnight*/
+  /*  background-image: url("..images/quote.png");*/
+   background-repeat:no-repeat;
+   background-size:contain;
+   vertical-align: middle;
+}
+
+#status {
+    vertical-align: middle;
+    /*font-style: italic;
+    font-family:Garamond;*/
+    font-size: 12px;
+    font-family: customfont;
+}
+
+
+#weather { /*the div that contains the weather list*/
+ /*   background-image: url("C:\Users\testuser\Desktop\HelloUserTask\HelloUserTask\www\css\images\bg.jpg");*/
+     background-repeat:no-repeat;
+   background-size:contain;
+     font-family: 'customfont';
+
+}
+
+.center {
+   width: 100%;
+   position: absolute;
+   left: 50%;
+   top: 50%; 
+
+}
+
+#refresh, button {
+    font-family: customfont;
+    background-color:#ED8D0F;
+	-moz-border-radius:28px;
+	-webkit-border-radius:28px;
+	border-radius:28px;
+	border:1px solid;
+	
+	cursor:pointer;
+	color:#ffffff;
+	font-size:12px;
+	padding:16px 31px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #2f6627;
+}
+
+
+
+/*
+.app {
+    background: url(../images/cordova.png) no-repeat center top; 
+    position: absolute;             
+    left: 50%;
+    top: 50%;
+    height: 50px;                  
+    width: 225px;                   
+    text-align: center;
+    padding: 180px 0px 0px 0px;     
+    margin: -115px 0px 0px -112px;
+}*/
+
+@media screen and (min-aspect-ratio: 1/1) and (min-width:400px) {
+    .app {
+        background-position:left center;
+        padding:75px 0px 75px 170px;
+     /*   margin:-90px 0px 0px -198px;*/
+        margin: auto;
+    }
+}
+
+h1 {
+    font-size:24px;
+    font-weight:normal;
+    margin:0px;
+    overflow:visible;
+    padding:0px;
+    text-align:center;
+     font-family: customfont;
+    //color: rgb(242,171,79);
+}
+
+.event {
+    border-radius:4px;
+    -webkit-border-radius:4px;
+    color:#FFFFFF;
+    font-size:12px;
+    margin:0px 30px;
+    padding:2px 0px;
+}
+
+.event.listening {
+    background-color:#333333;
+    display:block;
+}
+
+.event.received {
+    background-color:#4B946A;
+    display:none;
+}
+
+@keyframes fade {
+    from { opacity: 1.0; }
+    50% { opacity: 0.4; }
+    to { opacity: 1.0; }
+}
+ 
+@-webkit-keyframes fade {
+    from { opacity: 1.0; }
+    50% { opacity: 0.4; }
+    to { opacity: 1.0; }
+}
+ 
+.blink {
+    animation:fade 3000ms infinite;
+    -webkit-animation:fade 3000ms infinite;
+}
+
+.not-displayed {
+    display: none;
+}
+
+#allquotes {
+    text-align: left;
+    font-family: customfont;
+}

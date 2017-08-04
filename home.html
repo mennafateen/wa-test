@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <access origin="*" />
+   <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap:
+http://api.openweathermap.org https://ssl.gstatic.com 'unsafe-eval'; style-src 'self'
+'unsafe-inline'; media-src *">-->
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css" />
+    <link rel="stylesheet" href="css/animate.css" type="text/css">
+    <link rel="stylesheet" href="css/animate.min.css" type="text/css">
+
+    <title>HelloUserTask</title>
+</head>
+<body>
+
+   <div id="login">
+        <br /><br /><br /><br /><br />
+        username: <input type="text" id="username" name="username" />
+        <br /><br />
+        password: <input type="password" id="password" name="password" />
+        <br /><br />
+       <p id="loginerror"></p>
+        <button id="loginbutton">login</button>
+       <br /><br />
+       <button id="signupbutton1">sign up</button>
+
+    </div>
+    <div id="signup-form" class="not-displayed">
+        <br /><br /><br /><br /><br />
+        first name: <input name="firstname" id="firstname" type="text" />
+        <br /> <br />
+        last name: <input name="lastname" id="lastname" type="text" />
+        <br /> <br />
+        email: <input name="email" id="email" type="email" />
+        <br /> <br />
+        username: <input name="username" id="newusername" type="text" />
+        <br /> <br />
+        password: <input name="password" id="newpassword" type="password" />
+        <br /><br />
+        <button id="signupbutton2">sign up</button>
+        <br />
+        <h1 id="signup-msg"></h1>
+    </div>
+    <div id="main">
+        <br><br>
+        <div id="prompt" class="not-displayed">
+            <label for="user-name" id="username">Type your name:</label>
+            <input id="user-name-input" name="user-name" placeholder="eg. John Nash" required /><br><br>
+            <!-- <button id="greet-me-btn" class="not-displayed" data-role="button" data-icon="check">Greet Me!</button>-->
+        </div>
+
+        <div id="the-greeting" class="not-displayed">
+            <h2 id="greet"><span id="greeting"></span></h2>
+        </div>
+
+        <div id="quote" class="not-displayed">
+            <p id="status"></p>
+        </div>
+        <br />
+        <div id="buttons" class="not-displayed">
+            <button id="addquote-button">add</button>
+            <button id="dltquote-button">dlt</button>
+            <button id="allquote-button">all</button>
+        </div>
+        <div id="dltquote-form-div" class="not-displayed">
+                <input name="id" id="dltquote" />
+            <br /> <br />
+                <button id="dltquotebutton">delete</button>
+            <br />
+            <h1 id="success-msg2"></h1>
+        </div>
+
+        <div id="addquote-form-div" class="not-displayed">
+            <input name="quotetext" id="quote-input" type="text" />
+            <br /> <br />
+            <button id="submitquote">submit</button>
+            <br />
+            <h1 id="success-msg"></h1>
+        </div>
+
+        <div id="allquote-form-div" class="not-displayed">
+           <ul id="allquotes"></ul>
+        </div>
+        <br /><br />
+        <button id="back-button"class="not-displayed">back</button>
+
+        <div id="weather">
+            <h3 id="weather-title" class="not-displayed">Weather Today</h3>
+            <ul id="weather-data" data-role="listview" data-inset="true" class="ui-listview ui-listview-inset ui-corner-all ui-shadow not-displayed">
+                <li data-role="list-divider" id="title" class="ui-li-divider ui-bar-a"></li>
+                <li><span id="summary"><span id="temperature"></span> F <img src="" /></span></li>
+                <li>Wind: <span id="wind"></span> knots</li>
+                <li>Humidity: <span id="humidity"></span> %</li>
+                <li>Visibility: <span id="visibility"></span></li>
+                <li>Sunrise: <span id="sunrise"></span></li>
+                <li>Sunset: <span id="sunset"></span></li>
+                <br />
+                <li><span id="advice"></span></li>
+            </ul>
+        </div>
+
+    </div>
+    <br /><br />
+    <button id="refresh" class="not-displayed" data-role="button" data-icon="check">refresh</button>
+    <br />
+    <br />
+
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="scripts/platformOverrides.js"></script>
+    <script type="text/javascript" src="scripts/functions.js"></script>
+    <script type="text/javascript" src="scripts/index2.js"></script>
+    <script src="scripts/jquery-3.1.1.min.js"></script>
+    <script src="scripts/jquery.mobile-1.4.5.min.js"></script>
+
+
+
+
+</body>
+
+</html>
