@@ -1,4 +1,4 @@
-$( document ).ready(function() {
+$(document).ready(function() {
   $('#greet-me-btn').click(greetMe);
  // $('#greet-me-btn').click(getWeatherWithGeoLocation);
   $('#refresh').click(refreshPage);
