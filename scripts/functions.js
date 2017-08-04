@@ -15,8 +15,8 @@ function greetMe() {
     $('#refresh').show();
     $('#the-greeting').show();
     $('#quote').show();
-    $('#weather-title').show();
-    $('#weather-data').show();
+   // $('#weather-title').show();
+    //$('#weather-data').show();
     $('#addquote-button-div').show();
     $('#buttons').show();
     // greet user based on time
@@ -129,7 +129,7 @@ function refreshPage() {
     $('#buttons').show();
     $('#quote').show();
     $('#refresh').show();
-    $('#weather-title').show();
+  //  $('#weather-title').show();
    // $('#addquote-button-div').hide();
 }
 
@@ -139,11 +139,11 @@ function addQuoteForm() {
     $('#username').hide();
     $('#buttons').hide();
     $('#user-name-input').hide();
-    $('#weather-data').hide();
+   // $('#weather-data').hide();
     $('#the-greeting').hide();
     $('#quote').hide();
     $('#refresh').hide();
-    $('#weather-title').hide();
+  //  $('#weather-title').hide();
     $('#buttons').hide();
     $('#back-button').show();
     $('#allquote-form-div').hide();
@@ -186,11 +186,11 @@ function dltQuoteForm() {
     $('#username').hide();
     $('#buttons').hide();
     $('#user-name-input').hide();
-    $('#weather-data').hide();
+  //  $('#weather-data').hide();
     $('#the-greeting').hide();
     $('#quote').hide();
     $('#refresh').hide();
-    $('#weather-title').hide();
+  //  $('#weather-title').hide();
     $('#buttons').hide();
     $('#back-button').show();
     $('#addquote-form-div').hide();
@@ -217,11 +217,11 @@ function allQuotes() {
     $('#username').hide();
     $('#buttons').hide();
     $('#user-name-input').hide();
-    $('#weather-data').hide();
+ //   $('#weather-data').hide();
     $('#the-greeting').hide();
     $('#quote').hide();
     $('#refresh').hide();
-    $('#weather-title').hide();
+  //  $('#weather-title').hide();
     $('#buttons').hide();
     $('#back-button').show();
     $('#addquote-form-div').hide();
@@ -260,8 +260,8 @@ function back() {
     $('#refresh').show();
     $('#the-greeting').show();
     $('#quote').show();
-    $('#weather-title').show();
-    $('#weather-data').show();
+//    $('#weather-title').show();
+ //   $('#weather-data').show();
     $('#buttons').show();
     $('#addquote-form-div').hide();
     $('#allquote-form-div').hide();
@@ -275,7 +275,7 @@ function back() {
 function home() {
     $('#login').hide();
     $('#signup-form').hide();
-    getWeatherWithGeoLocation();
+  //  getWeatherWithGeoLocation();
     refreshPage();
 }
 
